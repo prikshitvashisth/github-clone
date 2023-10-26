@@ -1,7 +1,7 @@
-/* import fonts  */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* color variables  */
+
 
 :root {
   --primary-green: #2da44e;
@@ -11,7 +11,6 @@
   --border-color: rgb(141, 141, 141);
 }
 
-/* default properties  */
 a {
   text-decoration: none;
 }
@@ -42,7 +41,7 @@ body {
 }
 
 .github-logo {
-  /* border: 1px solid black; */
+
   margin-bottom: 20px;
 }
 
