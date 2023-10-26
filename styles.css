@@ -1,91 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.big-b{
-    width: 100px;
-    height: 600px;
-}
-.icon{
-    font-size:55px;
-    text-align: center;
-    color: #232023;
+/* import fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* color variables  */
 
+:root {
+  --primary-green: #2da44e;
+  --primary-dark: #24292f;
+  --primary-light: #ffffff;
+  --fade-light: #f6f8fa;
+  --border-color: rgb(141, 141, 141);
 }
-.head{
-    margin:24px 0;
-    text-align: center;
-    font-size: 25px;
-    color: #504c50;
+
+/* default properties  */
+a {
+  text-decoration: none;
 }
-.login{
-    background: #afb7c01e;
-    width: 100px;
-    height: 250px;
-    padding: 15px 16px 18px 16px;
-    border: 1px solid #8ba0b570;
-    border-radius: 7px;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-input{
-    width: 100%;
-    padding: 7px;
-    font-size:15px;
-    border-radius: 5px;
-    border: 1px solid #8ba0b570;
-    outline: name;
-    transition: all 0.1s linear;
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.in-box{
-    margin-bottom: 15px;
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  align-items: center;
 }
-.label{
-    font-size:14px;
-    margin-bottom: 12px;
-    padding-top: 8px;
-    display: flrx;
-    justify-content: space-between;
-    color: #232023;
+
+.github-logo {
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
-.label a{
-    font-size:14px;
-    text-decoration: none;
-    color: rgba(0,0,255,0.541);
+
+.github-logo i {
+  font-size: 50px;
 }
-.input:focus{
-    border:2px solid rgba(0,0,255,0.541);
+
+.github-head {
+  font-size: 28px;
 }
-.btn{
-    font-size:18px;
-    background:rgba(9,135,9,0.989);
-    color:#fff;
-    cursor:pointer;
+
+.login-wrapper {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: 25px 15px;
+  border-radius: 5px;
+  background-color: var(--fade-light);
+  margin-top: 40px;
 }
-.signup{
-    width:100%;
-    margin:18px 0;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-    border:1px solid #8ba0b570;
-    border-radius:7px;
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-.signup span{
-    font-size:;
-    color: #233023;
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
 }
-.signup a{
-    font-size:14px;
-    padding-left:3px;
-    test-decoration:none;
-    color:rgba(0,0,255,0.635);
+
+input {
+  width: 100%;
+  outline: none;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-dark);
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-light);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+}
+
+.info {
+  font-size: 15px;
+  margin-top: 35px;
+  border: 1px solid var(--border-color);
+  padding: 20px 15px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--fade-light);
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    padding: 0px 10px;
+  }
+
+  .info {
+    font-size: 14px;
+    padding: 17px 10px;
+  }
+
+  .input-label {
+    font-size: 14px;
+  }
 }
